@@ -13,6 +13,7 @@ extensions = [
     'sphinx.ext.viewcode',    # For adding links to source code
     'sphinx.ext.githubpages', # For GitHub Pages compatibility
     'myst_parser',           # For Markdown support
+    'sphinx_rtd_theme',      # Add this line to enable the theme
 ]
 
 templates_path = ['_templates']
