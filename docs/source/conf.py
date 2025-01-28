@@ -1,23 +1,44 @@
-import os
-import sys
+# Configuration file for the Sphinx documentation builder.
+#
+# For the full list of built-in configuration values, see the documentation:
+# https://www.sphinx-doc.org/en/master/usage/configuration.html
 
-# If you need to import your code:
-# sys.path.insert(0, os.path.abspath('../../'))  # adjust as needed
+# -- Project information -----------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-# Make sure to import the theme (this line is optional but good practice)
-import sphinx_rtd_theme
+# import os
+# import sys
+
+# sys.path.insert(0, os.path.abspath('../..'))  # adjust as needed
 
 project = 'Unichunk Time Series Forecasting'
 author = 'Unichunk LLC'
 release = '1.0'
 
+# -- General configuration ---------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
+
+# Add myst_parser to extensions
 extensions = [
-    'sphinx_rtd_theme',
-    # ... if you have other extensions
+    'myst_parser'
 ]
 
-# If you don't need any static files, you can empty this
-html_static_path = []
+# Specify source_suffix as a dictionary
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
-# The important part: pick the theme
+master_doc = 'index'
+
+templates_path = ['_templates']
+exclude_patterns = []
+
+
+
+# -- Options for HTML output -------------------------------------------------
+# https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+
 html_theme = 'sphinx_rtd_theme'
+html_static_path = ['_static']
+

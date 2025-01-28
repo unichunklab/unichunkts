@@ -30,3 +30,7 @@ wheels/
 # OS
 .DS_Store
 Thumbs.db" > .gitignore
+
+!docs/*.html
+!docs/_static/
+!docs/_sources/
