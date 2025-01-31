@@ -6,30 +6,14 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-import os
-import sys
-
-sys.path.insert(0, os.path.abspath('../..'))  # adjust as needed
-
-project = 'Unichunk Time Series Forecasting'
-author = 'Unichunk LLC'
-release = '1.0'
+project = 'T'
+copyright = '2025, t'
+author = 't'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-# Add myst_parser to extensions
-extensions = [
-    'myst_parser'
-]
-
-# Specify source_suffix as a dictionary
-source_suffix = {
-    '.rst': 'restructuredtext',
-    '.md': 'markdown',
-}
-
-master_doc = 'index'
+extensions = []
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -41,4 +25,3 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-
