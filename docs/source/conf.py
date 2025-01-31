@@ -21,6 +21,8 @@ release = '1.0'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.viewcode',  # For viewing source code
+    'myst_parser',
+    'sphinx.ext.mathjax'  # or 'sphinx.ext.imgmath' for PNG rendering
 ]
 
 templates_path = ['_templates']
@@ -32,3 +34,10 @@ exclude_patterns = []
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
+
+                        
+# Optional: Configure MathJax
+myst_enable_extensions = [
+    "dollarmath",  # Enables $...$ for inline math
+    "amsmath"      # Enables $$...$$ for display math
+]
