@@ -45,7 +45,7 @@ sphinx-build -b html source .
 
 4. Add `.nojekyll` file:
 ```bash
-touch docs/.nojekyll
+touch .nojekyll
 ```
 
 5. Update `.gitignore` to track HTML:
